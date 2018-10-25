@@ -4,6 +4,10 @@ node_js:
   - 8
   - 10
 
+script:
+  - npm test
+  - npm run coverage
+
 matrix:
   fast_finish: true
 

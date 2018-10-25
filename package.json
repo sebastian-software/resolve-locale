@@ -6,7 +6,8 @@
   "module": "lib/index.esm.js",
   "scripts": {
     "clean": "rimraf lib/",
-    "test": "jest && codecov",
+    "test": "jest",
+    "coverage": "codecov",
     "prepack": "npm run clean && preppy"
   },
   "repository": {
