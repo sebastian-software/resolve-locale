@@ -48,7 +48,7 @@ localesLoader[locale]().then(() => {
 `<array<string>> detectBrowserLocale([navigator])`
 
 Detect browsers locales as array sorted by preference. Locales are expanded.
-["de-de","en"] will expand to ["de-de", "de", "en"].
+`["de-de","en"]` will expand to `["de-de", "de", "en"]`.
 
 ## License
 
