@@ -13,7 +13,7 @@
 [appveyor-img]: https://img.shields.io/appveyor/ci/fastner/resolve-locale/master.svg?label=windows%20build
 [travis]: https://travis-ci.org/sebastian-software/resolve-locale
 [appveyor]: https://ci.appveyor.com/project/fastner/resolve-locale/branch/master
-[codecov-img]: https://img.shields.io/codecov/c/github/codecov/example-python.svg
+[codecov-img]: https://img.shields.io/codecov/c/github/sebastian-software/resolve-locale.svg
 [codecov]: https://codecov.io/gh/sebastian-software/resolve-locale
 
 ## Getting started
@@ -21,6 +21,27 @@
 Install _resolve-locale_ via
 
 `npm install resolve-locale`
+
+Then add it to your browser source
+
+```
+import { detectBrowserLocale, resolveLocale } from "resolve-locale"
+
+const localesLoader = {
+  "de": () => import("./locale/de"),
+  "pt-pt": () => import("./locale/pt-pt"),
+  "zh-hant-cn": () => import("./locale/zh-Hant-CN")
+}
+const availableLoaders = Object.keys(localesLoader)
+const storedLocale = localStorage.getItem("locale")
+
+const browserLocales = detectBrowserLocale()
+const locale = resolveLocale(browserLocales, availableLoaders, storedLocale)
+
+localesLoader[locale]().then(() => {
+  ... main app
+})
+```
 
 ## License
 
