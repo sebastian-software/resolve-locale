@@ -24,7 +24,7 @@ Install _resolve-locale_ via
 
 Then add it to your browser source
 
-```
+```javascript
 import { detectBrowserLocale, resolveLocale } from "resolve-locale"
 
 const localesLoader = {
