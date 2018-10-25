@@ -43,6 +43,13 @@ localesLoader[locale]().then(() => {
 })
 ```
 
+## API
+
+`<array<string>> detectBrowserLocale([navigator])`
+
+Detect browsers locales as array sorted by preference. Locales are expanded.
+["de-de","en"] will expand to ["de-de", "de", "en"].
+
 ## License
 
 [Apache License; Version 2.0, January 2004](http://www.apache.org/licenses/LICENSE-2.0)
