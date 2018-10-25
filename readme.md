@@ -48,7 +48,16 @@ localesLoader[locale]().then(() => {
 `<array<string>> detectBrowserLocale([navigator])`
 
 Detect browsers locales as array sorted by preference. Locales are expanded.
-`["de-de","en"]` will expand to `["de-de", "de", "en"]`.
+`["de-de","en"]` will expand to `["de-de", "de", "en"]`. `navigator` is an
+optional parameter reflecting browsers navigator object.
+
+`<string> resolveLocale(browserLocales, supportedLocales, [preferredLocale])`
+
+`browserLocales` should be result of `detectBrowserLocale()`. `supportedLocales` is an array of
+supported locales by your app. `preferredLocale` is optional and a locale that is somehow
+assigned to the user. This can be done by save locale to localStorage.
+
+Returns best fit locale.
 
 ## License
 
