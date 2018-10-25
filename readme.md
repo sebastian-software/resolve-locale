@@ -10,9 +10,9 @@
 [npm-downloads-img]: https://img.shields.io/npm/dm/resolve-locale.svg
 [npm-version-img]: https://img.shields.io/npm/v/resolve-locale.svg
 [travis-img]: https://img.shields.io/travis/sebastian-software/resolve-locale/master.svg?branch=master&label=unix%20build
-[appveyor-img]: https://img.shields.io/appveyor/ci/swernerx/resolve-locale/master.svg?label=windows%20build
+[appveyor-img]: https://img.shields.io/appveyor/ci/fastner/resolve-locale/master.svg?label=windows%20build
 [travis]: https://travis-ci.org/sebastian-software/resolve-locale
-[appveyor]: https://ci.appveyor.com/project/swernerx/resolve-locale/branch/master
+[appveyor]: https://ci.appveyor.com/project/fastner/resolve-locale/branch/master
 [codecov-img]: https://img.shields.io/codecov/c/github/codecov/example-python.svg
 [codecov]: https://codecov.io/gh/sebastian-software/resolve-locale
 
