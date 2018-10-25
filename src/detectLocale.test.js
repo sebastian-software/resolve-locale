@@ -1,4 +1,9 @@
-import { detectBrowserLocale, expandLocale, normalizeLocaleParts } from "./detectLocale"
+import {
+  detectBrowserLocale,
+  expandLocale,
+  expandLocales,
+  normalizeLocaleParts
+} from "./detectLocale"
 
 describe("normalize locale part to lower case", () => {
   test("simple locale", () => {
@@ -87,6 +92,15 @@ describe("expand locale", () => {
     const expected = []
 
     const result = expandLocale(value)
+
+    expect(result).toEqual(expected)
+  })
+
+  test("expand locales", () => {
+    const value = [ "de-de", "pt-pt" ]
+    const expected = [ "de-de", "de", "pt-pt", "pt" ]
+
+    const result = expandLocales(value)
 
     expect(result).toEqual(expected)
   })

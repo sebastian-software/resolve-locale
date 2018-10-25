@@ -23,12 +23,16 @@ export function expandLocale(locale) {
   return result
 }
 
+export function expandLocales(locales) {
+  return locales.map((locale) => expandLocale(locale)).reduce((prev, localeArray) => {
+    return prev.concat(localeArray)
+  }, [])
+}
+
 export function detectBrowserLocale(navigator = currentGlobal.navigator) {
   const locales = (navigator.languages || [ navigator.language ]).map((locale) =>
     normalizeLocaleParts(locale)
   )
 
-  return locales.map((locale) => expandLocale(locale)).reduce((prev, localeArray) => {
-    return prev.concat(localeArray)
-  }, [])
+  return expandLocales(locales)
 }
