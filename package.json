@@ -28,7 +28,7 @@
     "email": "s.fastner@sebastian-software.de",
     "url": "https://sebastian-software.de"
   },
-  "license": "MIT",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/sebastian-software/resolve-locale/issues"
   },
