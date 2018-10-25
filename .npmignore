@@ -2,3 +2,4 @@
 babel.config.js
 src/*
 *.tgz
+jest.config.js
