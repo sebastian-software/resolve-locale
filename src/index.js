@@ -1,1 +1,2 @@
-console.log("ABC")
+export * from "./detectLocale"
+export * from "./resolveLocale"
