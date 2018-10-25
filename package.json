@@ -50,9 +50,5 @@
   },
   "dependencies": {
     "core-js": "^2.5.7"
-  },
-  "jest": {
-    "coverageDirectory": "./coverage/",
-    "collectCoverage": true
   }
 }

@@ -1,4 +1,6 @@
 module.exports = {
   verbose: true,
-  testURL: "http://localhost/"
+  testURL: "http://localhost/",
+  coverageDirectory: "./coverage/",
+  collectCoverage: true
 }
